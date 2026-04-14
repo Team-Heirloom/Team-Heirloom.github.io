@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Heirloom</title>
+  <meta name="description" content="Heirloom Privacy Policy">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <style>
+    :root {
+      /* Heirloom Color Palette - Navy Primary */
+      --heirloom-cream: #F3F5FA;
+      --heirloom-paper: #FFFFFF;
+
+      /* Navy (Primary Brand) */
+      --heirloom-teal-50: #EEF1F7;
+      --heirloom-teal-100: #D6DCEA;
+      --heirloom-teal-200: #AEB8D1;
+      --heirloom-teal-300: #7F8DB3;
+      --heirloom-teal-400: #556693;
+      --heirloom-teal-500: #334473;
+      --heirloom-teal-600: #22325A;
+      --heirloom-teal-700: #1B2A4A;
+      --heirloom-teal-800: #141F37;
+      --heirloom-teal-900: #0D1524;
+
+      /* Stone (Neutrals) */
+      --heirloom-stone-100: #F3F4F6;
+      --heirloom-stone-200: #E5E7EB;
+      --heirloom-stone-500: #6B7280;
+      --heirloom-stone-600: #4B5563;
+      --heirloom-stone-700: #374151;
+      --heirloom-stone-800: #1F2937;
+      --heirloom-stone-900: #111827;
+
+      /* Typography */
+      --font-serif: 'Crimson Text', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--heirloom-cream);
+      color: var(--heirloom-stone-800);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(243, 245, 250, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--heirloom-stone-200);
+      z-index: 100;
+      padding: 1rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .nav-logo span {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--heirloom-stone-900);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: white;
+      background: var(--heirloom-teal-700);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--heirloom-teal-800);
+    }
+
+    /* Content */
+    .legal-content {
+      padding-top: 7rem;
+      padding-bottom: 4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .legal-content h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--heirloom-stone-900);
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-meta {
+      color: var(--heirloom-stone-500);
+      margin-bottom: 2rem;
+      font-size: 0.9375rem;
+    }
+
+    .legal-content h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--heirloom-stone-900);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-content p {
+      color: var(--heirloom-stone-700);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .legal-content strong {
+      color: var(--heirloom-stone-900);
+    }
+
+    .legal-content ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .legal-content li {
+      color: var(--heirloom-stone-700);
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    .legal-content a {
+      color: var(--heirloom-teal-700);
+      text-decoration: none;
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-notice {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: var(--heirloom-teal-50);
+      border: 1px solid var(--heirloom-teal-200);
+      border-radius: 12px;
+      font-size: 0.9375rem;
+      color: var(--heirloom-teal-700);
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--heirloom-stone-200);
+      margin: 2rem 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--heirloom-teal-900);
+      color: var(--heirloom-teal-300);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+    }
+
+    .footer-logo span {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .footer p {
+      font-size: 0.875rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--heirloom-teal-300);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .legal-content h1 {
+        font-size: 2rem;
+      }
+
+      .nav-logo span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Heirloom">
+        <span>Heirloom</span>
+      </a>
+      <a href="index.html#early-access" class="nav-cta">Request Early Access</a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="legal-content">
+    <h1>Privacy Policy</h1>
+    <p class="legal-meta"><strong>Effective Date:</strong> April 2025 | <strong>Last Updated:</strong> April 2025</p>
+
+    <p>Heirloom ("we," "us," or "our") operates the Heirloom platform ("Platform" or "Service"). This Privacy Policy describes how we collect, use, store, and share your personal information when you use the Service.</p>
+
+    <p>By creating an account or using the Platform, you agree to the collection and use of your information as described in this Privacy Policy.</p>
+
+    <hr>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>1.1 Information You Provide.</strong> When you create an account, we collect your name, email address, and any other information you provide during registration. When you use the Platform, you may upload documents, files, credentials, notes, contact information for trusted contacts and beneficiaries, and other personal or sensitive information related to your digital legacy plan.</p>
+    <p><strong>1.2 Information Collected Automatically.</strong> When you access the Platform, we may automatically collect technical information such as your IP address, browser type, device information, operating system, and usage data including pages visited, features used, and timestamps.</p>
+    <p><strong>1.3 Information from Third Parties.</strong> If you connect third-party services to your account or if a trusted contact or beneficiary interacts with the Platform on your behalf, we may receive limited information from those interactions.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Provide, operate, and maintain the Platform</li>
+      <li>Process account registration and manage your account</li>
+      <li>Store and organize your uploaded assets, documents, and information</li>
+      <li>Execute release mechanisms and deliver notifications to your designated trusted contacts and beneficiaries as configured by you</li>
+      <li>Verify the identity of individuals requesting access through release triggers</li>
+      <li>Send transactional communications such as account verification emails, release notifications, and service updates</li>
+      <li>Monitor and improve the security and performance of the Platform</li>
+      <li>Respond to your inquiries and provide customer support</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+
+    <h2>3. How We Store and Protect Your Information</h2>
+    <p>We implement industry-standard security measures, including encryption at rest and in transit, to protect your personal information. Sensitive fields such as credentials and private notes are encrypted using strong encryption standards.</p>
+    <p>While we take reasonable precautions to protect your data, no method of electronic storage or transmission is completely secure. We cannot guarantee absolute security of your information.</p>
+
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p><strong>4.1 With Your Designated Contacts.</strong> When a release trigger is activated, your stored information will be made available to the trusted contacts and beneficiaries you have designated, in accordance with the permissions and access levels you configured. Notification-only contacts will receive notifications as configured but will not receive access to vault contents.</p>
+    <p><strong>4.2 Service Providers.</strong> We may share your information with third-party service providers who assist in operating the Platform, including hosting providers, email delivery services, and payment processors. These providers are contractually obligated to protect your information and may only use it to perform services on our behalf.</p>
+    <p><strong>4.3 Legal Requirements.</strong> We may disclose your information if required to do so by law, regulation, legal process, or governmental request, or if we believe disclosure is necessary to protect our rights, your safety, or the safety of others.</p>
+    <p><strong>4.4 Business Transfers.</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change in ownership or control.</p>
+    <p>We do not sell your personal information to third parties.</p>
+
+    <h2>5. Data Retention</h2>
+    <p><strong>5.1 Active Accounts.</strong> We retain your information for as long as your account remains active and as needed to provide the Service.</p>
+    <p><strong>5.2 Post-Release Retention.</strong> Following the activation of a release event, the Owner's subscription will be canceled and the Owner's data will remain accessible to designated beneficiaries and trusted contacts for a specified and limited duration. After this access period expires, the Owner's data will be scheduled for deletion. Data will not be retained or accessible indefinitely following a release event.</p>
+    <p><strong>5.3 Account Deletion.</strong> If you request deletion of your account, we will delete your personal information within a reasonable timeframe, subject to any legal obligations that require us to retain certain data. Some information may persist in encrypted backups for a limited period before being permanently removed.</p>
+    <p><strong>5.4 Anonymized Data.</strong> We may retain anonymized, aggregated data that cannot be used to identify you for analytics and service improvement purposes.</p>
+
+    <h2>6. Your Rights and Choices</h2>
+    <p>Depending on your jurisdiction, you may have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you</li>
+      <li>Correct inaccurate or incomplete information</li>
+      <li>Request deletion of your personal information</li>
+      <li>Object to or restrict certain processing of your data</li>
+      <li>Request a portable copy of your data</li>
+      <li>Withdraw consent where processing is based on consent</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at support@mylifeheirloom.com. We will respond to your request within the timeframe required by applicable law.</p>
+
+    <h2>7. Cookies and Tracking</h2>
+    <p>We may use cookies and similar technologies to maintain your session, remember your preferences, and analyze usage patterns. You can control cookie settings through your browser. Disabling cookies may affect certain features of the Platform.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>The Service is not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child under 18, we will take steps to delete that information promptly.</p>
+
+    <h2>9. Third-Party Links</h2>
+    <p>The Platform may contain links to third-party websites or services. We are not responsible for the privacy practices or content of those third parties. We encourage you to review the privacy policies of any third-party services you access.</p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated policy on the Platform and updating the "Last Updated" date. Your continued use of the Service after changes are posted constitutes acceptance of the revised Privacy Policy.</p>
+
+    <h2>11. California Residents</h2>
+    <p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to request deletion, and the right to opt out of the sale of personal information. We do not sell personal information. To exercise your rights, contact us at support@mylifeheirloom.com.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or our data practices, please contact us at support@mylifeheirloom.com.</p>
+
+    <div class="legal-notice">
+      This Privacy Policy is a placeholder and should be reviewed and finalized by qualified legal counsel before being considered a complete or enforceable privacy policy.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Heirloom">
+        <span>Heirloom</span>
+      </div>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Heirloom. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

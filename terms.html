@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - Heirloom</title>
+  <meta name="description" content="Heirloom Terms of Service">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <style>
+    :root {
+      /* Heirloom Color Palette - Navy Primary */
+      --heirloom-cream: #F3F5FA;
+      --heirloom-paper: #FFFFFF;
+
+      /* Navy (Primary Brand) */
+      --heirloom-teal-50: #EEF1F7;
+      --heirloom-teal-100: #D6DCEA;
+      --heirloom-teal-200: #AEB8D1;
+      --heirloom-teal-300: #7F8DB3;
+      --heirloom-teal-400: #556693;
+      --heirloom-teal-500: #334473;
+      --heirloom-teal-600: #22325A;
+      --heirloom-teal-700: #1B2A4A;
+      --heirloom-teal-800: #141F37;
+      --heirloom-teal-900: #0D1524;
+
+      /* Stone (Neutrals) */
+      --heirloom-stone-100: #F3F4F6;
+      --heirloom-stone-200: #E5E7EB;
+      --heirloom-stone-500: #6B7280;
+      --heirloom-stone-600: #4B5563;
+      --heirloom-stone-700: #374151;
+      --heirloom-stone-800: #1F2937;
+      --heirloom-stone-900: #111827;
+
+      /* Typography */
+      --font-serif: 'Crimson Text', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--heirloom-cream);
+      color: var(--heirloom-stone-800);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(243, 245, 250, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--heirloom-stone-200);
+      z-index: 100;
+      padding: 1rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .nav-logo span {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--heirloom-stone-900);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: white;
+      background: var(--heirloom-teal-700);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--heirloom-teal-800);
+    }
+
+    /* Content */
+    .legal-content {
+      padding-top: 7rem;
+      padding-bottom: 4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .legal-content h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--heirloom-stone-900);
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-meta {
+      color: var(--heirloom-stone-500);
+      margin-bottom: 2rem;
+      font-size: 0.9375rem;
+    }
+
+    .legal-content h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--heirloom-stone-900);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-content p {
+      color: var(--heirloom-stone-700);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .legal-content strong {
+      color: var(--heirloom-stone-900);
+    }
+
+    .legal-content ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .legal-content li {
+      color: var(--heirloom-stone-700);
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    .legal-content a {
+      color: var(--heirloom-teal-700);
+      text-decoration: none;
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-notice {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: var(--heirloom-teal-50);
+      border: 1px solid var(--heirloom-teal-200);
+      border-radius: 12px;
+      font-size: 0.9375rem;
+      color: var(--heirloom-teal-700);
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--heirloom-stone-200);
+      margin: 2rem 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--heirloom-teal-900);
+      color: var(--heirloom-teal-300);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+    }
+
+    .footer-logo span {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .footer p {
+      font-size: 0.875rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--heirloom-teal-300);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .legal-content h1 {
+        font-size: 2rem;
+      }
+
+      .nav-logo span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Heirloom">
+        <span>Heirloom</span>
+      </a>
+      <a href="index.html#early-access" class="nav-cta">Request Early Access</a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="legal-content">
+    <h1>Terms of Service</h1>
+    <p class="legal-meta"><strong>Effective Date:</strong> April 2025 | <strong>Last Updated:</strong> April 2025</p>
+
+    <p>Welcome to Heirloom ("Platform," "Service," "we," "us," or "our"). By creating an account or using the Heirloom platform, you agree to these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
+
+    <hr>
+
+    <h2>1. Overview of the Service</h2>
+    <p>Heirloom is a digital legacy planning and asset organization platform. The Service allows users ("Owners") to inventory, organize, and securely store information about their digital and physical assets, designate trusted contacts and beneficiaries, and configure release mechanisms that govern how and when designated individuals may access stored information.</p>
+
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 18 years of age to create an account. By using the Service, you represent that you meet this requirement and that the information you provide is accurate and complete.</p>
+
+    <h2>3. Account Registration and Security</h2>
+    <p>You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately of any unauthorized access to your account. We are not liable for any loss or damage arising from your failure to protect your account information.</p>
+
+    <h2>4. Uploaded Documents Are Not Legally Binding</h2>
+    <p>Heirloom is an organizational and planning tool. Documents uploaded to the Platform, including but not limited to wills, trusts, power of attorney designations, healthcare directives, and other legal instruments, are stored for informational and reference purposes only.</p>
+    <p><strong>No document uploaded to or stored on Heirloom constitutes a legally binding instrument.</strong> If a will, trust, or other legal document is uploaded to the Platform, the original signed hard copy of that document, executed in accordance with applicable law, remains the sole legally binding version. The uploaded copy stored on Heirloom cannot and should not be used to execute the wishes of the deceased or to establish legal rights of any party.</p>
+    <p>Heirloom does not provide legal advice. Users are strongly encouraged to work with a qualified attorney to ensure their estate planning documents are properly executed, witnessed, and stored in accordance with the laws of their jurisdiction.</p>
+
+    <h2>5. Release Mechanisms and Beneficiary Access</h2>
+    <p>Heirloom employs configurable release mechanisms, including inactivity timers and manual release triggers, that govern when and how designated individuals may access an Owner's stored information.</p>
+    <p>By using the Platform, you acknowledge and agree to the following:</p>
+    <p><strong>5.1 Consent to Release Mechanisms.</strong> As an Owner, you consent to the release and trigger mechanisms employed by the Platform. When you designate trusted contacts or beneficiaries and configure release triggers, you authorize the Platform to make your stored information available to those designated individuals according to the rules and conditions you have configured.</p>
+    <p><strong>5.2 Tiered Access Model.</strong> The Platform uses a tiered permission model to govern access. Trusted contacts designated for direct vault access ("Ring 2 members") may receive access to your stored information upon activation of a configured release trigger. Notification-only contacts ("Ring 3 members") may receive notifications regarding the release event as configured by you, the Owner. The specific permissions, access levels, and notification behavior for each tier are described in the Platform's documentation and may be updated from time to time.</p>
+    <p><strong>5.3 Owner Responsibility.</strong> You are solely responsible for configuring your release mechanisms, designating your trusted contacts and beneficiaries, and assigning appropriate access levels. Heirloom is not responsible for the consequences of your configuration choices, including unintended access grants or notification omissions.</p>
+    <p><strong>5.4 Verification Workflows.</strong> Access requests from designated contacts may be subject to identity verification workflows as implemented by the Platform. These workflows are designed to help prevent unauthorized access but do not guarantee absolute security.</p>
+
+    <h2>6. Data Retention After Release</h2>
+    <p>Following the activation of a release event:</p>
+    <p><strong>6.1 Time-Limited Access.</strong> Designated beneficiaries and trusted contacts will have access to the Owner's released information for a specified and limited duration of time, as determined by the Platform's data retention policies in effect at the time of release. Access is not perpetual.</p>
+    <p><strong>6.2 Subscription Cancellation.</strong> Upon activation of a release event, the Owner's active subscription will be canceled. No further subscription charges will be incurred.</p>
+    <p><strong>6.3 Data Removal.</strong> After the designated access period expires, the Owner's data will be scheduled for deletion in accordance with the Platform's data retention policy. Heirloom does not guarantee indefinite storage of any user data following a release event.</p>
+    <p><strong>6.4 Export Recommendation.</strong> Designated beneficiaries are encouraged to download or export any needed information during the active access period, as data will not remain available indefinitely.</p>
+
+    <h2>7. Acceptable Use</h2>
+    <p>You agree not to use the Service to store content that is unlawful, infringes on the rights of others, or violates any applicable regulations. You agree not to attempt to circumvent security measures, access other users' data without authorization, or interfere with the operation of the Platform.</p>
+
+    <h2>8. Privacy</h2>
+    <p>Your use of the Service is also governed by our <a href="privacy.html">Privacy Policy</a>, which describes how we collect, use, and protect your personal information. By using the Service, you consent to the practices described in the Privacy Policy.</p>
+
+    <h2>9. Intellectual Property</h2>
+    <p>All content, features, and functionality of the Platform, including but not limited to text, graphics, logos, and software, are the property of Heirloom or its licensors and are protected by applicable intellectual property laws. Your use of the Service does not grant you ownership of any Platform content or materials.</p>
+
+    <h2>10. Disclaimers</h2>
+    <p>The Service is provided "as is" and "as available" without warranties of any kind, whether express or implied. We do not warrant that the Service will be uninterrupted, error-free, or secure. We do not warrant that any information stored on the Platform will be preserved indefinitely or that release mechanisms will function without delay or error in all circumstances.</p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Heirloom shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Service. Our total liability for any claim arising from these Terms shall not exceed the amount you paid to us in the twelve (12) months preceding the claim.</p>
+
+    <h2>12. Modifications to the Terms</h2>
+    <p>We may update these Terms from time to time. If we make material changes, we will notify you by posting the updated Terms on the Platform and updating the "Last Updated" date. Your continued use of the Service after changes are posted constitutes acceptance of the revised Terms.</p>
+
+    <h2>13. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the Service at any time for violation of these Terms or for any other reason at our discretion. You may terminate your account at any time by contacting us at support@mylifeheirloom.com.</p>
+
+    <h2>14. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to conflict of law principles.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>If you have questions about these Terms, please contact us at support@mylifeheirloom.com.</p>
+
+    <div class="legal-notice">
+      These Terms of Service are a placeholder and should be reviewed and finalized by qualified legal counsel before being considered binding or enforceable.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Heirloom">
+        <span>Heirloom</span>
+      </div>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Heirloom. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
