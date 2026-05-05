@@ -598,22 +598,28 @@
       background: var(--heirloom-cream);
     }
 
-    /* Portrait image at the top of the audience section, centered
-       above the title — frames the section as "this is who we
-       built it for." Different visual rhythm from the hero
-       (full-bleed background) and from a horizontal banner;
-       reads as a personal portrait that sets emotional context
-       before the audience choice below. */
+    /* Audience section — 2×2 grid layout:
+         top-left: portrait image
+         top-right: section badge + title (vertically centered)
+         bottom-left: For Families card
+         bottom-right: For Advisors card
+       Reads as a balanced editorial spread rather than a centered
+       column of stacked content. */
+    .audience-top-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
     .audience-portrait-wrap {
       position: relative;
       width: 100%;
-      max-width: 280px;
-      margin: 0 auto 2rem;
     }
 
-    /* Soft warm halo behind the portrait — gives it editorial
-       depth so it doesn't read as a pasted-in image. Same
-       vocabulary used elsewhere on the launch app. */
+    /* Soft warm halo behind the portrait for editorial depth.
+       Same vocabulary used in the launch app's hero cards. */
     .audience-portrait-halo {
       position: absolute;
       inset: -1.5rem;
@@ -644,6 +650,14 @@
       object-fit: cover;
       object-position: center 30%;
       display: block;
+    }
+
+    .audience-header-cell {
+      text-align: left;
+    }
+
+    .audience-header-cell .section-title {
+      margin-top: 1rem;
     }
 
     .audience-grid {
@@ -873,6 +887,20 @@
 
       .audience-grid {
         grid-template-columns: 1fr;
+      }
+
+      .audience-top-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .audience-portrait-wrap {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+
+      .audience-header-cell {
+        text-align: center;
       }
 
       .nav-logo span {
@@ -1156,15 +1184,17 @@
   <!-- Who It's For -->
   <section class="audience">
     <div class="container">
-      <div class="audience-portrait-wrap">
-        <div class="audience-portrait-halo" aria-hidden="true"></div>
-        <div class="audience-portrait">
-          <img src="assets/families-grandmother.jpg" alt="A grandmother and granddaughter sharing a warm moment" />
+      <div class="audience-top-row">
+        <div class="audience-portrait-wrap">
+          <div class="audience-portrait-halo" aria-hidden="true"></div>
+          <div class="audience-portrait">
+            <img src="assets/families-grandmother.jpg" alt="A grandmother and granddaughter sharing a warm moment" />
+          </div>
         </div>
-      </div>
-      <div style="text-align: center;">
-        <span class="section-badge">Who It's For</span>
-        <h2 class="section-title">Designed for families—and those who support them.</h2>
+        <div class="audience-header-cell">
+          <span class="section-badge">Who It's For</span>
+          <h2 class="section-title">Designed for families—and those who support them.</h2>
+        </div>
       </div>
       <div class="audience-grid">
         <div class="audience-card">
