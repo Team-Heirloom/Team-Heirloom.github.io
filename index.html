@@ -605,21 +605,20 @@
          bottom-right: For Advisors card
        Reads as a balanced editorial spread rather than a centered
        column of stacked content. */
+    /* Same grid template + gap as .audience-grid below so the
+       photo lines up exactly with the For Families card and the
+       title cell lines up with the For Advisors card. */
     .audience-top-row {
       display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
       align-items: center;
       margin-bottom: 3rem;
     }
 
-    /* Capped at 360px — sized to feel like a deliberate portrait
-       without exceeding the width of the For Families / For
-       Advisors cards below it (~560px on desktop). */
     .audience-portrait-wrap {
       position: relative;
-      width: 360px;
-      flex-shrink: 0;
+      width: 100%;
     }
 
     /* Soft warm halo behind the portrait for editorial depth.
