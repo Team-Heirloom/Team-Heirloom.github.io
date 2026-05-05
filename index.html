@@ -152,9 +152,42 @@
 
     /* Hero */
     .hero {
+      position: relative;
       padding-top: 8rem;
       padding-bottom: 5rem;
       text-align: center;
+      overflow: hidden;
+    }
+
+    /* Hero background image — fills the full section. The cream
+       overlay above it mutes the image so the headline + email
+       form remain the visual focal point. */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-image: url('assets/hero-couple-sunset.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      filter: saturate(0.95) brightness(1.05);
+    }
+
+    /* Cream wash on top of the hero image — color-matched to the
+       page background (#F3F5FA) so the wash blends seamlessly with
+       the rest of the section. Heaviest in the center where the
+       text sits, slightly lighter at edges for atmosphere. */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 75% 65% at 50% 50%, rgba(243, 245, 250, 0.86) 0%, rgba(243, 245, 250, 0.78) 60%, rgba(243, 245, 250, 0.92) 100%);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-badge {
@@ -563,6 +596,32 @@
       background: var(--heirloom-cream);
     }
 
+    /* Wide horizontal banner image between the section title and
+       the cards. Aspect ratio kept cinematic (21:9) so the image
+       reads as an intentional editorial moment, not a decorative
+       afterthought. Soft shadow + rounded corners match the rest
+       of the page's vocabulary. */
+    .audience-banner {
+      position: relative;
+      max-width: 900px;
+      margin: 2.5rem auto 0;
+      aspect-ratio: 21 / 9;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow:
+        0 30px 60px -20px rgba(27, 42, 74, 0.20),
+        0 10px 20px -8px rgba(27, 42, 74, 0.10),
+        0 0 0 1px rgba(27, 42, 74, 0.04);
+    }
+
+    .audience-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      display: block;
+    }
+
     .audience-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -833,6 +892,8 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="container">
       <span class="hero-badge">Coming Soon</span>
       <h1>One trusted place for everything that matters</h1>
@@ -1074,6 +1135,9 @@
       <div style="text-align: center;">
         <span class="section-badge">Who It's For</span>
         <h2 class="section-title">Designed for families—and those who support them.</h2>
+      </div>
+      <div class="audience-banner">
+        <img src="assets/families-boardwalk.jpg" alt="A couple walking together along a wooden boardwalk" />
       </div>
       <div class="audience-grid">
         <div class="audience-card">
