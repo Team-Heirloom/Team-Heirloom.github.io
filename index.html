@@ -607,15 +607,18 @@
        column of stacked content. */
     .audience-top-row {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: auto 1fr;
       gap: 3rem;
       align-items: center;
       margin-bottom: 3rem;
     }
 
+    /* Capped at 240px so the portrait reads as a supporting visual
+       rather than dominating the title and cards below. */
     .audience-portrait-wrap {
       position: relative;
-      width: 100%;
+      width: 240px;
+      flex-shrink: 0;
     }
 
     /* Soft warm halo behind the portrait for editorial depth.
